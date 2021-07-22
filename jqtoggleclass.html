@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("h1, h2, p").toggleClass("red");
+		
+		});
+	});
+	</script>
+	<style>
+	.big {
+		font-weight: bold;
+		font-size: x-large;
+	}
+
+	.red {
+		color: red;
+	}
+	</style>
+</head>
+<body>
+
+	<h1 class="red">Heading 1</h1>
+	<h2 class="red">Heading 2</h2>
+
+	<p class="red">Text Line 1.</p>
+	<p class="red">Text Line 2.</p>
+
+	<div>Text Line 3.</div><br>
+
+	<button>Toggle Class</button>
+
+</body>
+</html>

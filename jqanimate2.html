@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        var square=$("#square");
+		square.animate({height:'500px',opacity:'0.5'},1000);
+		square.animate({width:'500px',opacity:'0.9'},500);
+		square.animate({height:'200px',opacity:'0.5'},1000);
+		square.animate({width:'200px',opacity:'0.9'},500);
+	  });
+});	  
+</script>
+
+<style>
+
+#square{
+	background:blue;
+	height:160px;
+	width:160px;
+	margin-top:5px;
+	position:absolute;
+}
+
+</style>
+</head>
+<body>
+
+<button>Star Animation</button>
+
+<div id="square"></div>
+
+</body>
+</html>
